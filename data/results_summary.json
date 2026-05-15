@@ -1,0 +1,196 @@
+{
+  "n_total": 12979,
+  "n_merged": 9845,
+  "n_closed": 3134,
+  "n_repos": 192,
+  "medians_overall": {
+    "changed_files": 2.0,
+    "lines_changed": 37.0,
+    "analysis_time_hours": 32.02055555555555,
+    "body_length_chars": 659.0,
+    "participants_count": 2.0,
+    "comments_count": 1.0,
+    "reviews_count": 1.0
+  },
+  "medians_by_status": {
+    "MERGED": {
+      "changed_files": 2.0,
+      "lines_changed": 38.0,
+      "analysis_time_hours": 24.49944444444445,
+      "body_length_chars": 640.0,
+      "participants_count": 2.0,
+      "comments_count": 1.0,
+      "reviews_count": 2.0
+    },
+    "CLOSED": {
+      "changed_files": 1.0,
+      "lines_changed": 32.0,
+      "analysis_time_hours": 102.02597222222224,
+      "body_length_chars": 696.5,
+      "participants_count": 2.0,
+      "comments_count": 2.0,
+      "reviews_count": 1.0
+    }
+  },
+  "rq_results": [
+    {
+      "rq": "RQ01",
+      "dimension": "Tamanho",
+      "dependent": "status (MERGED=1, CLOSED=0)",
+      "metric": "changed_files",
+      "metric_label": "Arquivos alterados",
+      "spearman_rho": 0.10886555115909959,
+      "p_value": 1.6183056810603182e-35,
+      "n": 12979,
+      "median_merged": 2.0,
+      "median_closed": 1.0,
+      "figure": "rq01_boxplot_changed_files.png"
+    },
+    {
+      "rq": "RQ01",
+      "dimension": "Tamanho",
+      "dependent": "status (MERGED=1, CLOSED=0)",
+      "metric": "lines_changed",
+      "metric_label": "Linhas alteradas (add+del)",
+      "spearman_rho": 0.029931335537740477,
+      "p_value": 0.0006487351754366669,
+      "n": 12979,
+      "median_merged": 38.0,
+      "median_closed": 32.0,
+      "figure": "rq01_boxplot_lines_changed.png"
+    },
+    {
+      "rq": "RQ02",
+      "dimension": "Tempo de analise",
+      "dependent": "status (MERGED=1, CLOSED=0)",
+      "metric": "analysis_time_hours",
+      "metric_label": "Tempo de analise (horas)",
+      "spearman_rho": -0.2272413625678981,
+      "p_value": 1.2108349639230068e-151,
+      "n": 12979,
+      "median_merged": 24.49944444444445,
+      "median_closed": 102.02597222222224,
+      "figure": "rq02_boxplot_analysis_time_hours.png"
+    },
+    {
+      "rq": "RQ03",
+      "dimension": "Descricao",
+      "dependent": "status (MERGED=1, CLOSED=0)",
+      "metric": "body_length_chars",
+      "metric_label": "Tamanho da descricao (caracteres)",
+      "spearman_rho": -0.01666954225439568,
+      "p_value": 0.05756006725698086,
+      "n": 12979,
+      "median_merged": 640.0,
+      "median_closed": 696.5,
+      "figure": "rq03_boxplot_body_length_chars.png"
+    },
+    {
+      "rq": "RQ04",
+      "dimension": "Interacoes",
+      "dependent": "status (MERGED=1, CLOSED=0)",
+      "metric": "participants_count",
+      "metric_label": "Numero de participantes",
+      "spearman_rho": -0.02052740707353632,
+      "p_value": 0.01935539344794917,
+      "n": 12979,
+      "median_merged": 2.0,
+      "median_closed": 2.0,
+      "figure": "rq04_boxplot_participants_count.png"
+    },
+    {
+      "rq": "RQ04",
+      "dimension": "Interacoes",
+      "dependent": "status (MERGED=1, CLOSED=0)",
+      "metric": "comments_count",
+      "metric_label": "Numero de comentarios",
+      "spearman_rho": -0.08083437790188193,
+      "p_value": 2.88098030477975e-20,
+      "n": 12979,
+      "median_merged": 1.0,
+      "median_closed": 2.0,
+      "figure": "rq04_boxplot_comments_count.png"
+    },
+    {
+      "rq": "RQ05",
+      "dimension": "Tamanho",
+      "dependent": "reviews_count",
+      "metric": "changed_files",
+      "metric_label": "Arquivos alterados",
+      "spearman_rho": 0.24496205746998137,
+      "p_value": 1.1928519001345346e-176,
+      "n": 12979,
+      "figure": "rq05_scatter_changed_files_vs_reviews.png"
+    },
+    {
+      "rq": "RQ05",
+      "dimension": "Tamanho",
+      "dependent": "reviews_count",
+      "metric": "lines_changed",
+      "metric_label": "Linhas alteradas (add+del)",
+      "spearman_rho": 0.2909444394813478,
+      "p_value": 1.3923006247004122e-251,
+      "n": 12979,
+      "figure": "rq05_scatter_lines_changed_vs_reviews.png"
+    },
+    {
+      "rq": "RQ06",
+      "dimension": "Tempo de analise",
+      "dependent": "reviews_count",
+      "metric": "analysis_time_hours",
+      "metric_label": "Tempo de analise (horas)",
+      "spearman_rho": 0.07773501429599562,
+      "p_value": 7.40964334050269e-19,
+      "n": 12979,
+      "figure": "rq06_scatter_analysis_time_hours_vs_reviews.png"
+    },
+    {
+      "rq": "RQ07",
+      "dimension": "Descricao",
+      "dependent": "reviews_count",
+      "metric": "body_length_chars",
+      "metric_label": "Tamanho da descricao (caracteres)",
+      "spearman_rho": 0.17867757146087024,
+      "p_value": 1.4483723428099857e-93,
+      "n": 12979,
+      "figure": "rq07_scatter_body_length_chars_vs_reviews.png"
+    },
+    {
+      "rq": "RQ08",
+      "dimension": "Interacoes",
+      "dependent": "reviews_count",
+      "metric": "participants_count",
+      "metric_label": "Numero de participantes",
+      "spearman_rho": 0.3503896866986168,
+      "p_value": 0.0,
+      "n": 12979,
+      "figure": "rq08_scatter_participants_count_vs_reviews.png"
+    },
+    {
+      "rq": "RQ08",
+      "dimension": "Interacoes",
+      "dependent": "reviews_count",
+      "metric": "comments_count",
+      "metric_label": "Numero de comentarios",
+      "spearman_rho": 0.2898559508055267,
+      "p_value": 1.232834303653518e-249,
+      "n": 12979,
+      "figure": "rq08_scatter_comments_count_vs_reviews.png"
+    }
+  ],
+  "figures": {
+    "RQ01_changed_files": "rq01_boxplot_changed_files.png",
+    "RQ01_lines_changed": "rq01_boxplot_lines_changed.png",
+    "RQ02_analysis_time_hours": "rq02_boxplot_analysis_time_hours.png",
+    "RQ03_body_length_chars": "rq03_boxplot_body_length_chars.png",
+    "RQ04_participants_count": "rq04_boxplot_participants_count.png",
+    "RQ04_comments_count": "rq04_boxplot_comments_count.png",
+    "RQ05_changed_files": "rq05_scatter_changed_files_vs_reviews.png",
+    "RQ05_lines_changed": "rq05_scatter_lines_changed_vs_reviews.png",
+    "RQ06_analysis_time_hours": "rq06_scatter_analysis_time_hours_vs_reviews.png",
+    "RQ07_body_length_chars": "rq07_scatter_body_length_chars_vs_reviews.png",
+    "RQ08_participants_count": "rq08_scatter_participants_count_vs_reviews.png",
+    "RQ08_comments_count": "rq08_scatter_comments_count_vs_reviews.png",
+    "heatmap": "heatmap_correlacoes.png"
+  }
+}
